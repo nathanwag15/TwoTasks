@@ -1,0 +1,52 @@
+Requirements specification
+-Two users will input coordinates and a radius size for two circles.
+-The program will calculate the distance between the two circles and determine if they overlap at all.
+-The program will tell the users if they are in each other's circle.
+
+System Analysis
+-The system will gain the values from the user
+-The system will determine the distance between the points.
+-The system will calculate if the circles intersect.
+-The system will print out the results.
+
+System Design
+-The system will use this formula to determine the distance between the two points.
+equation1 = math.pow(x2 - x1, 2)
+equation2 = math.pow(y2 - y1, 2)
+distance = math.sqrt(equation1 + equation2)
+The program will also determine if the circle's intersect by subtracting the radii
+
+Testing
+
+test 1
+
+Welcome to the Social Situation Analyzer System
+Person One
+    Enter your name: Alice
+    Enter your position (x, y): 50, -70
+    Enter your personal space radius: 30
+
+Person Two
+    Enter your name: Bob
+    Enter your position (x, y): 30, -50
+    Enter your personal space radius: 20
+
+Social Situation Analysis Results
+    Person Test: Bob is in Alice's personal space
+    Space Test: Alice and Bob's personal spaces overlap
+
+
+test 2
+
+Welcome to the Social Situation Analyzer System
+Person One
+        Enter your name: Nate
+        Enter your position (x y): 12 -30
+        Enter your personal space radius: 20
+Person Two
+        Enter your name: Steve
+        Enter your position (x y): -12 30
+        Enter your personal space radius: 20
+Social Situation Analysis Results
+   Person Test:  Neither Nate or Steve is in the other's personal space.
+   Space Test:  Nate and Steve's personal spaces do not overlap.

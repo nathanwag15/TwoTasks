@@ -1,0 +1,26 @@
+Requirements specification
+- The program will generate a random number for the user to guess 1-10.
+- The program will tell the user how far off they are.
+
+System Analysis
+-The system will generate a random number using the random module.
+-The user will input a guess.
+-The system will generate 4 responses to give the user based on how close they are to the number generated.
+
+System Design
+-The system will use the random module.
+-The system will use if statements to generate the response.
+
+Testing
+
+Input 3
+Output:
+
+Input 3
+Output:
+
+Input 4
+Output:
+
+Input 9
+Output:
